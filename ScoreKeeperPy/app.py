@@ -3,11 +3,17 @@ from Game import Game
 from Score import Score
 from time import time
 
+print("Welcome To Grant's Football Game")
+print("Enter home team name:")
+homeTeamName = input()
+print("Enter away team name:")
+awayTeamName = input()
+
 manUStartingEleven = ["De Gea", "Wan Bisaka", "Maguire", "Lindelof", "Shaw", "Van De Beek", "Pogba", "Fernandes", "Martial", "Greenwood", "Rashford"]        
 chelseaStartingEleven = ["Mendy", "James", "Zouma", "Silva", "Chillwell", "Jorginho", "Kante", "Mount", "Pulisic", "Werner", "Havertz"]
 
-homeTeam = Team("Man United", manUStartingEleven, 1)
-awayTeam = Team("Chelsea", chelseaStartingEleven, 2)
+homeTeam = Team(homeTeamName, manUStartingEleven, 1)
+awayTeam = Team(awayTeamName, chelseaStartingEleven, 2)
 
 gameOne = Game()
 
