@@ -1,28 +1,25 @@
 from Team import Team
 from Game import Game
 from Score import Score
+from time import time
 
-scoreOne = Score()
-scoreOne.TeamOneGoals = 3
-scoreOne.TeamTwoGoals = 2
+manUStartingEleven = ["De Gea", "Wan Bisaka", "Maguire", "Lindelof", "Shaw", "Van De Beek", "Pogba", "Fernandes", "Martial", "Greenwood", "Rashford"]        
+chelseaStartingEleven = ["Mendy", "James", "Zouma", "Silva", "Chillwell", "Jorginho", "Kante", "Mount", "Pulisic", "Werner", "Havertz"]
 
-gameOne = Game(scoreOne)
+manUnited = Team("Man United", manUStartingEleven)
+chelsea = Team("Chelsea", chelseaStartingEleven)
 
-gameOne.printScore()
+gameOne = Game()
 
+gameOne.addTeamOneGoal("Greenwood", manUnited.Name)
+gameOne.addTeamTwoGoal("Havertz", chelsea.Name)
 
-
-
-#manUStartingEleven = ["De Gea", "Wan Bisaka", "Maguire", "Lindelof", "Shaw", "Van De Beek", "Pogba", "Fernandes", "Martial", "Greenwood", "Rashford"]        
-#chelseaStartingEleven = ["Mendy", "James", "Zouma", "Silva", "Chillwell", "Jorginho", "Kante", "Mount", "Pulisic", "Werner", "Havertz"]
-
-#manUnited = Team("Man United", manUStartingEleven)
-#manUnited.printTeamName()
-#manUnited.printStartingEleven()
-#print(len(manUnited.StartingEleven))
+ 
 
 
-#chelsea = Team("Chelsea", chelseaStartingEleven)
-#chelsea.printTeamName()
-#chelsea.printStartingEleven()
-#print(len(chelsea.StartingEleven))
+
+
+
+
+
+
