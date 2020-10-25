@@ -1,7 +1,6 @@
 from Team import Team
 from Game import Game
 from Score import Score
-from time import time
 
 print("Welcome To Grant's Football Game")
 print("Enter home team name:")
@@ -20,7 +19,7 @@ gameOne = Game()
 print("Game Has Begun {} vs {}".format(homeTeamName, awayTeamName))
 print(" ")
 
-gameOne.addTeamGoal("Greenwood", homeTeam.Name, homeTeam.TeamId)
+gameOne.addTeamGoal(manUStartingEleven[7], homeTeam.Name, homeTeam.TeamId)
 gameOne.addTeamGoal("Havertz", awayTeam.Name, awayTeam.TeamId)
 gameOne.addTeamGoal("Rashford", homeTeam.Name, homeTeam.TeamId)
 
