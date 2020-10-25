@@ -17,6 +17,9 @@ awayTeam = Team(awayTeamName, chelseaStartingEleven, 2)
 
 gameOne = Game()
 
+print("Game Has Begun {} vs {}".format(homeTeamName, awayTeamName))
+print(" ")
+
 gameOne.addTeamGoal("Greenwood", homeTeam.Name, homeTeam.TeamId)
 gameOne.addTeamGoal("Havertz", awayTeam.Name, awayTeam.TeamId)
 gameOne.addTeamGoal("Rashford", homeTeam.Name, homeTeam.TeamId)
