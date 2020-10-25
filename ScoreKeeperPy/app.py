@@ -5,9 +5,10 @@ from Score import Score
 scoreOne = Score()
 scoreOne.TeamOneGoals = 3
 scoreOne.TeamTwoGoals = 2
+
 gameOne = Game(scoreOne)
-scoreText = "{} - {}"
-print(scoreText.format(gameOne.Score.TeamOneGoals, gameOne.Score.TeamTwoGoals))
+
+gameOne.printScore()
 
 
 
